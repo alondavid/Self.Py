@@ -13,8 +13,6 @@ def chocolate_maker(small, big, x):
     '''
     large = 5
 
-    num_of_big = x // large
-    num_of_small = x % large
-    if num_of_big <= big and num_of_small <= small:
+    if big * large + small >= x:
         return True
     return False
